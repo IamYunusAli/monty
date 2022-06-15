@@ -12,5 +12,4 @@ push 4
     push 5    
       push    6        
 
-pall This is the end of our program. Monty is awesome!$
-sjfklasj
+pall This is the end of our program. Monty is awesome!

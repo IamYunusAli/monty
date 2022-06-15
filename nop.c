@@ -1,14 +1,14 @@
 #include "monty.h"
 
 /**
- * _nop - The opcode nop doesn’t do anything.
- * @head: double pointer to header (top) of the stack.
- * @line_number: counter for line number of the file.
+ * nop -  does nothing
+ * @stack: doesnt matter
+ * @line_cnt : for nothing
  *
- * Return: void.
+ * Return: NOTHING
  */
-void _nop(stack_t **head, unsigned int line_number)
+void nop(stack_t **stack, unsigned int line_cnt)
 {
-	(void) head;
-	(void) line_number;
+	(void) stack;
+	(void) line_cnt;
 }

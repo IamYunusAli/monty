@@ -1,21 +1,13 @@
 #include "monty.h"
 
 /**
- * _pall - pushes an element to the stack.
- * @stack: double pointer to header (top) of the stack.
- * @line_number: counter for line number of the file.
+ * pall - prints the stack
+ * @stack: stack given by main in start.c
+ * @line_cnt: amount of lines
  *
- * Return: void.
+ * Return: void
  */
-void _pall(stack_t **stack, unsigned int line_number)
+void pall(stack_t **stack, unsigned int line_cnt __attribute__((unused)))
 {
-	stack_t *current;
-
-	(void) line_number;
-	current = *stack;
-	while (current != NULL)
-	{
-		printf("%d\n", current->n);
-		current = current->next;
-	}
+	print_stack(*stack);
 }
